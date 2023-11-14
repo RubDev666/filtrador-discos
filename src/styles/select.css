@@ -1,0 +1,111 @@
+.select-contenedor {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--fondo-oscuro);
+    padding: 35px 25px;
+    box-sizing: border-box;
+    transition: left .3s ease-in-out;
+    z-index: 100;
+}
+ 
+.select-contenedor.show{
+    left: 0;
+}
+
+.btn-cerrar-filtros{
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    display: none;
+    color: var(--bg-btn-1);
+    font-size: 30px;
+    transition: color .3s ease-in-out;
+}
+
+.btn-cerrar-filtros:hover {
+    color: var(--bg-btn-1-hover);
+}
+
+.select-genero label {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.select-genero select {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: var(--tarjeta-hover);
+    color: var(--text-white);
+}
+
+.select-ordenar {
+    margin: 30px 0;
+}
+
+.contenedor-input {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-input span {
+    color: var(--text-white-dark);
+    font-weight: 700;
+    font-size: 15px;
+    transition: color .3s ease-in-out;
+    width: 100%;
+}
+
+.contenedor-input span:hover {
+    color: var(--text-white);
+}
+
+.contenedor-input .circulo {
+    border-radius: 100%;
+    padding: 3px;
+    background-color: var(--bg-btn-1);
+}
+
+.contenedor-input input {
+    display: none;
+}
+
+.circulo .circulo-active {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--bg-btn-1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contenedor-input input:checked ~ .circulo .circulo-active{
+    background-color: var(--fondo-oscuro);
+}
+
+.contenedor-input input:checked ~ span {
+    color: var(--text-white);
+}
+
+/*==================== RESPONSIVE =========== */
+@media screen and (max-width: 850px) {
+    .select-contenedor {
+        left: -250px;
+    }
+
+    .btn-cerrar-filtros{
+        display: block;
+    }
+}
