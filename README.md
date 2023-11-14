@@ -1,8 +1,14 @@
-# React + Vite
+#Filtrador de discos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Local Storage
+- React con Vite
 
-Currently, two official plugins are available:
+## Descripcion del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proyecto sencillo sobre un filtrador de discos para una tienda de musica.
+
+- carrito de compras
+- Eliminar y agregar articulos
+- Actualizar total a pagar en tiempo real
+- Filtrador por generos musicales
+- Ordenar por precios o nombres
